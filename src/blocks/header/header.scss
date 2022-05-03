@@ -2,6 +2,9 @@
 
 .header {
   height: 150px;
+  position: relative;
+  z-index: 5;
+
   &__body {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,20 @@
     font-size: 24px;
     line-height: 35px;
     color: #331a2f;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 100%;
+      opacity: 0;
+      background-color: #cf51ce;
+      transition: opacity 0.8s;
+      top: 100%;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
     @media (max-width: variables.$bp2) {
       font-size: 18px;
     }
@@ -50,6 +67,9 @@
     line-height: 35px;
     letter-spacing: 0.02em;
     color: #ffffff;
+    &:hover {
+      background-color: #d16ad1;
+    }
     @media (max-width: variables.$bp3) {
       width: 103.21px;
       height: 36px;
@@ -174,6 +194,7 @@
     line-height: 35px;
     text-decoration: none;
     color: #331a2f;
+    position: relative;
     @media (max-width: variables.$bp2) {
       font-size: 18px;
     }
@@ -182,6 +203,18 @@
         content: url(../../assets/img/icons/arrow_down.svg);
         margin-left: 11.45px;
       }
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 0%;
+      background-color: #cf51ce;
+      opacity: 0.1;
+      transition: width 0.4s ease-in-out;
+    }
+    &:hover::before {
+      width: 100%;
     }
   }
 }

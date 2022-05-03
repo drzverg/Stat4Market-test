@@ -2,17 +2,17 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 526:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "assets/img/Bg stars.webp";
-
-/***/ }),
-
 /***/ 833:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "assets/img/Superman.webp";
+
+/***/ }),
+
+/***/ 195:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/img/bgstars.webp";
 
 /***/ }),
 
@@ -143,7 +143,7 @@ var __webpack_exports__ = {};
 /* harmony import */ var _src_assets_img_icons_arrow_right_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(76);
 /* harmony import */ var _src_assets_img_icons_carbon_phone_filled_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(404);
 /* harmony import */ var _src_assets_img_icons_sprite_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(180);
-/* harmony import */ var _src_assets_img_Bg_stars_webp__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(526);
+/* harmony import */ var _src_assets_img_bgstars_webp__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(195);
 /* harmony import */ var _src_assets_img_Superman_webp__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(833);
 // Import Styles =========================
 
