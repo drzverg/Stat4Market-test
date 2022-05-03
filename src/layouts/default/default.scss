@@ -1,0 +1,177 @@
+//Variables ==========================================================================================================================================
+
+//Screen sizes ------------------------------
+$bp1: 1920px;
+$bp2: 1280px;
+$bp3: 768px;
+$bp4: 360px;
+
+//Wrappers ------------------------------
+//$maxWidthSite: 1600px;
+//$maxWidthContent: 1140px + 20px;
+
+//Text ------------------------------
+$defaultFont: "Lato";
+$textColorGeneral: rgba(51, 26, 47, 0.8);
+
+//Null ===============================================================================================================================================
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+//Fonts ==============================================================================================================================================
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: local($font_name),
+      url("/src/assets/fonts/#{$font_name}/#{$file_name}.woff") format("woff"),
+      url("/src/assets/fonts/#{$font_name}/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@include font("Lato", "Lato-Regular", "400", "normal");
+@include font("Lato", "Lato-Medium", "500", "normal");
+@include font("Lato", "Lato-SemiBold", "600", "normal");
+@include font("Lato", "Lato-Bold", "700", "normal");
+
+.site-wrapper {
+  max-width: 1920px;
+  font-family: $defaultFont;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.content-wrapper {
+  box-sizing: border-box;
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (max-width: $bp2) {
+    max-width: 1240px;
+  }
+  @media (max-width: $bp3) {
+    padding: 0 0;
+    max-width: 758px;
+  }
+  @media (max-width: $bp4) {
+    max-width: 350px;
+    width: 350px;
+  }
+  //   max-width: 100%;
+  //   padding: 0 10px 0 10px;
+  //   margin: 0 auto;
+  //   @media (max-width: $bp1) {
+  //     max-width: 939.9px;
+  //   }
+  //   @media (max-width: $bp2) {
+  //     max-width: 747.9px;
+  //   }
+}
+
+/*
+// Logo ============================================
+.logo {
+  font-family: Ribeye;
+  font-weight: 400;
+  font-size: 1.333em;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+// Buttons =========================================
+
+.btn {
+  box-sizing: border-box;
+  padding: 0 5px;
+  background-color: #c9453b;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.889em;
+  color: #ffffff;
+}
+
+.link-btn {
+  text-decoration: none;
+}
+*/
+
+h1 {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 80px;
+  @media (max-width: $bp2) {
+    font-size: 46px;
+    line-height: 65px;
+  }
+  @media (max-width: $bp4) {
+    font-size: 26px;
+    line-height: 150%;
+  }
+}
+
+h2 {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  @media (max-width: $bp2) {
+    font-size: 40px;
+  }
+  @media (max-width: $bp4) {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+h5 {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  @media (max-width: $bp2) {
+    font-size: 20px;
+  }
+  @media (max-width: $bp4) {
+    font-size: 18px;
+  }
+}
+
+.section-text_regular {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 160%;
+  color: $textColorGeneral;
+  @media (max-width: $bp2) {
+    font-size: 20px;
+  }
+  @media (max-width: $bp4) {
+    font-size: 18px;
+  }
+}
+
+.section-text_second {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: $textColorGeneral;
+  @media (max-width: $bp2) {
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
+
+.pink-text {
+  color: #cf51ce;
+}

@@ -1,0 +1,75 @@
+extends /layouts/default/default.pug
+
+block content
+  section.main.content-wrapper
+    ul.main__breadcrumb.breadcrumb-list(itemscope='' itemtype='https://schema.org/BreadcrumbList')
+      li.breadcrumb-list__item(itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem')
+        a.breadcrumb-list__link(href='/' title='Главная' itemprop='item')
+          span.breadcrumb-list__text(itemprop='name') Главная
+        meta(itemprop='position' content='0')
+      li.breadcrumb-list__item(itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem')
+        a.breadcrumb-list__link(href='/teach/' title='Обучение' itemprop='item')
+          span.breadcrumb-list__text(itemprop='name') Обучение
+        meta(itemprop='position' content='1')
+    h1.main__title
+      span.pink-text Обучающие курсы 
+      | для поставщиков на маркетплейсы
+    .main__content
+      .main__price.price
+        svg.price__icon
+          use(xlink:href="./assets/img/icons/sprite.svg#wallet")
+        p.price__text от 
+          span.price__text_pink.pink-text 19 900 
+          |&#8381;
+      .main__text-content
+        p.main__text.section-text_regular Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров
+        p.main__text.section-text_regular Добро пожаловать в Академию. Это место для эффективного обучения, где мы рассказываем, как работают маркетплейсы и никогда не вдаемся в теорию, которая не понадобится на практике.
+        p.main__text.section-text_regular Нащи уроки помогут понять логику работы площадок и взять управление продажами в свои руки, а не действовать наугад. Становись экспертом в работе с маркетплейсами и увеличивай свою прибыль.
+      
+  .decoration
+    .decoration_body 
+      img.decoration__image.decoration__image_superman(src="./assets/img/Superman.webp")
+      img.decoration__image.decoration__image_stars(src="./assets/img/Bg stars.webp")
+  section.story.content-wrapper
+    h2.story__title Небольшая предыстория о том, почему нам можно доверять
+    .story__content
+      .story__block
+        img.story__image.story__image_first(src="./assets/img/story_1.webp", alt="Dollar board")
+        .story__text-content
+          p.story__text.section-text_regular Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные магазины в крупных ТЦ Москвы («Европейский», «Метрополис», «Мега» и др.), а также свой интернет-магазин. Мы накопили большой опыт в продвижении своих товаров за счет многочисленных запусков разных рекламных каналов и работы с блогерами. 
+      .story__block
+        img.story__image.story__image_second(src="./assets/img/story_2.webp", alt="Notebook")
+        .story__text-content
+          p.story__text.section-text_regular Летом 2019 года мы вышли на маркетплейсы и после работы с ними в течение 2 месяцев приняли решение развивать только это направление. И не прогадали. Весь накопленный опыт мы направили на улучшение и продвижение наших брендов.
+          p.story__text.section-text_regular Пришло время поделится знаниями и лайфхаками, которые будут собраны и доступны в нашей Академии stat4market. 
+  section.teach.content-wrapper 
+    h2.teach__title 
+      | Обучение по продажам на маркетплейсах от stat
+      span.teach__title_pink.pink-text 4
+      | market
+    p.teach__subtitle.section-text_regular «Увеличение реальной прибыли, конкретика и ключевые инструменты, которые дают результат» — на этом тезисе созданы наши курсы
+    ul.teach__description.teach-list
+      li.teach-list__item 
+        .teach-list__icon-box
+          svg.teach-list__icon
+            use(xlink:href="./assets/img/icons/sprite.svg#target")
+        h5.teach-list__title Наше обучение построено очень лаконично и просто 
+        p.teach-list__text.section-text_second Все занятия короткие по продолжительности для легкого восприятия и понимания. Мы даем в уроках только конкретику, без лишней теории и “воды”.
+      li.teach-list__item 
+        .teach-list__icon-box
+          svg.teach-list__icon
+            use(xlink:href="./assets/img/icons/sprite.svg#site")
+        h5.teach-list__title Ко всем урокам есть дополнительные материалы 
+        p.teach-list__text.section-text_second Презентации, краткие инструкции, чек-листы и памятки по работе с маркетплейсами.
+      li.teach-list__item 
+        .teach-list__icon-box
+          svg.teach-list__icon
+            use(xlink:href="./assets/img/icons/sprite.svg#friends")
+        h5.teach-list__title Наше обучение — практико-ориентированное
+        p.teach-list__text.section-text_second Поэтому после прохождения уроков ты будешь выполнять задания, которые помогут тебе закрепить полученные знания на практике.
+      li.teach-list__item 
+        .teach-list__icon-box
+          svg.teach-list__icon
+            use(xlink:href="./assets/img/icons/sprite.svg#people")
+        h5.teach-list__title Создатели нашей Академии 
+        p.teach-list__text.section-text_second Действующие селлеры с большим опытом в продажах на маркетплейсах, эксперты компании stat4market, а также профессиональные лекторы и методологи.
