@@ -2,6 +2,9 @@
 
 .header {
   height: 150px;
+  @media (max-width: variables.$bp4) {
+    max-width: 350px;
+  }
   &__body {
     display: flex;
     flex-direction: row;
@@ -141,7 +144,7 @@
       font-size: 10px;
       line-height: 14px;
     }
-    @media (max-width: variables.$bp4) {
+    @media (max-width: variables.$bp3) {
       display: none;
     }
     &::before {

@@ -3,46 +3,6 @@
 .main {
   position: relative;
   width: 100%;
-  &::before {
-    display: none;
-    position: absolute;
-    content: " ";
-    width: 740px;
-    height: 740px;
-    border-radius: 50%;
-    background: linear-gradient(
-      264.3deg,
-      rgba(124, 78, 171, 0.2) 0.87%,
-      rgba(221, 81, 212, 0.2) 112.89%
-    );
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    top: 165px;
-    left: 1700px;
-    z-index: 2;
-    @media (max-width: variables.$bp2) {
-      display: none;
-    }
-  }
-  &::after {
-    display: none;
-    position: absolute;
-    content: " ";
-    width: 740px;
-    height: 740px;
-    border-radius: 50%;
-    background: linear-gradient(
-      264.3deg,
-      rgba(124, 78, 171, 0.8) 0.87%,
-      rgba(221, 81, 212, 0.8) 112.89%
-    );
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    top: 155px;
-    left: 1725px;
-    z-index: 1;
-    @media (max-width: variables.$bp2) {
-      display: none;
-    }
-  }
 
   &__title {
     margin-top: 15px;
@@ -164,9 +124,18 @@
 
 .decoration {
   position: absolute;
-  width: 100%;
-  height: 890px;
+  width: 1920px;
+  height: 980px;
   overflow: hidden;
+  @media (max-width: variables.$bp2) {
+    width: 1279px;
+  }
+  @media (max-width: variables.$bp3) {
+    width: 767px;
+  }
+  @media (max-width: variables.$bp4) {
+    width: 359px;
+  }
   &__image {
     &_superman {
       position: absolute;
@@ -205,6 +174,86 @@
         left: 760px;
       }
       @media (max-width: variables.$bp3) {
+        display: none;
+      }
+    }
+  }
+  &__circle {
+    &_left-light {
+      position: absolute;
+      width: 762px;
+      height: 763px;
+      background: linear-gradient(
+        264.3deg,
+        rgba(124, 78, 171, 0.2) 0.87%,
+        rgba(221, 81, 212, 0.2) 112.89%
+      );
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      border-radius: 50%;
+      top: -180px;
+      left: -660px;
+      @media (max-width: variables.$bp1) {
+        top: -270px;
+        left: -720px;
+      }
+      @media (max-width: variables.$bp3) {
+        display: none;
+      }
+    }
+    &_left-dark {
+      position: absolute;
+      width: 762px;
+      height: 763px;
+      background: linear-gradient(
+        264.3deg,
+        rgba(124, 78, 171, 0.8) 0.87%,
+        rgba(221, 81, 212, 0.8) 112.89%
+      );
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      border-radius: 50%;
+      top: -200px;
+      left: -685px;
+      @media (max-width: variables.$bp3) {
+        display: none;
+      }
+      @media (max-width: variables.$bp1) {
+        top: -280px;
+        left: -740px;
+      }
+    }
+    &_right-light {
+      position: absolute;
+      width: 740px;
+      height: 740px;
+      border-radius: 50%;
+      background: linear-gradient(
+        264.3deg,
+        rgba(124, 78, 171, 0.2) 0.87%,
+        rgba(221, 81, 212, 0.2) 112.89%
+      );
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      top: 420px;
+      left: 1880px;
+      z-index: 2;
+      @media (max-width: variables.$bp2) {
+        display: none;
+      }
+    }
+    &_right-dark {
+      position: absolute;
+      width: 740px;
+      height: 740px;
+      border-radius: 50%;
+      background: linear-gradient(
+        264.3deg,
+        rgba(124, 78, 171, 0.8) 0.87%,
+        rgba(221, 81, 212, 0.8) 112.89%
+      );
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      top: 385px;
+      left: 1900px;
+      z-index: 2;
+      @media (max-width: variables.$bp2) {
         display: none;
       }
     }
