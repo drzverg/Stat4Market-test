@@ -2,10 +2,6 @@
 
 .header {
   height: 150px;
-  display: none;
-  @media (max-width: variables.$bp4) {
-    max-width: 350px;
-  }
   &__body {
     display: flex;
     flex-direction: row;

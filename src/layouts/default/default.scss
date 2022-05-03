@@ -4,7 +4,7 @@
 $bp1: 1920px;
 $bp2: 1280px;
 $bp3: 768px;
-$bp4: 360px;
+$bp4: 420px;
 
 //Wrappers ------------------------------
 //$maxWidthSite: 1600px;
@@ -61,7 +61,7 @@ $textColorGeneral: rgba(51, 26, 47, 0.8);
     max-width: 758px;
   }
   @media (max-width: $bp4) {
-    max-width: 350px;
+    max-width: 95%;
   }
   //   max-width: 100%;
   //   padding: 0 10px 0 10px;
