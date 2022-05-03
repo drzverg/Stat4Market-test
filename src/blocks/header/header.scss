@@ -15,7 +15,7 @@
     }
   }
   &__phone {
-    margin-right: 90px;
+    margin-right: 20px;
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -133,7 +133,7 @@
     flex-direction: row;
     align-items: center;
     gap: 25px;
-    max-width: 232px;
+    max-width: 252px;
     font-family: Lato;
     font-weight: 400;
     font-size: 14px;
@@ -166,7 +166,7 @@
   flex-direction: row;
   align-items: center;
   margin-left: 30px;
-  gap: 50px;
+  gap: 40px;
   @media (max-width: variables.$bp3) {
     display: none;
   }
