@@ -16,6 +16,7 @@
     @media (max-width: variables.$bp4) {
       max-width: 202px;
       margin-top: 44px;
+      display: none;
     }
   }
   &__content {
@@ -280,6 +281,7 @@
   @media (max-width: variables.$bp4) {
     margin-top: 85px;
     gap: 50px;
+    display: none;
   }
   &__title {
     max-width: 844px;
